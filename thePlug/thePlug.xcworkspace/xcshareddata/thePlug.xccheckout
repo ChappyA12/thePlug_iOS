@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0889B37B-2295-465E-A590-7B58FCC20C1E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>thePlug</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DF95C9A65B6AB281C23E05828B0D24FF2077BF2E</key>
+		<string>https://github.com/ChappyA12/thePlug_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>thePlug/thePlug.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DF95C9A65B6AB281C23E05828B0D24FF2077BF2E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ChappyA12/thePlug_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DF95C9A65B6AB281C23E05828B0D24FF2077BF2E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DF95C9A65B6AB281C23E05828B0D24FF2077BF2E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>thePlug_iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

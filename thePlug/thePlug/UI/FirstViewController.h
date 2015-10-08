@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AWSDynamoDB/AWSDynamoDB.h>
 
 @interface FirstViewController : UIViewController
 

@@ -10,13 +10,16 @@
 		A818140BB74135F7B9555A71 /* libPods-thePlug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DF42AD29639916FC888952C /* libPods-thePlug.a */; };
 		F98B76331BBDF00100441C22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B76321BBDF00100441C22 /* main.m */; };
 		F98B76361BBDF00100441C22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B76351BBDF00100441C22 /* AppDelegate.m */; };
-		F98B76391BBDF00100441C22 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B76381BBDF00100441C22 /* FirstViewController.m */; };
-		F98B763C1BBDF00100441C22 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B763B1BBDF00100441C22 /* SecondViewController.m */; };
 		F98B763F1BBDF00100441C22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98B763D1BBDF00100441C22 /* Main.storyboard */; };
 		F98B76411BBDF00100441C22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F98B76401BBDF00100441C22 /* Assets.xcassets */; };
 		F98B76441BBDF00100441C22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F98B76421BBDF00100441C22 /* LaunchScreen.storyboard */; };
 		F98B764F1BBDF00100441C22 /* thePlugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B764E1BBDF00100441C22 /* thePlugTests.m */; };
 		F98B765A1BBDF00100441C22 /* thePlugUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B76591BBDF00100441C22 /* thePlugUITests.m */; };
+		F98B768E1BBDFC9500441C22 /* PLUserID.m in Sources */ = {isa = PBXBuildFile; fileRef = F98B768D1BBDFC9500441C22 /* PLUserID.m */; };
+		F9ED3E251BC736E1003D1BBA /* PLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E231BC736E1003D1BBA /* PLLoginViewController.m */; };
+		F9ED3E261BC736E1003D1BBA /* PLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E241BC736E1003D1BBA /* PLLoginViewController.xib */; };
+		F9ED3E291BC736ED003D1BBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E281BC736ED003D1BBA /* FirstViewController.m */; };
+		F9ED3E2C1BC736F3003D1BBA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,10 +47,6 @@
 		F98B76321BBDF00100441C22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F98B76341BBDF00100441C22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F98B76351BBDF00100441C22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F98B76371BBDF00100441C22 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F98B76381BBDF00100441C22 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F98B763A1BBDF00100441C22 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F98B763B1BBDF00100441C22 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		F98B763E1BBDF00100441C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F98B76401BBDF00100441C22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F98B76431BBDF00100441C22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +57,16 @@
 		F98B76551BBDF00100441C22 /* thePlugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thePlugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F98B76591BBDF00100441C22 /* thePlugUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = thePlugUITests.m; sourceTree = "<group>"; };
 		F98B765B1BBDF00100441C22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F98B76881BBDF39F00441C22 /* thePlug_header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thePlug_header.pch; sourceTree = "<group>"; };
+		F98B768C1BBDFC9500441C22 /* PLUserID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLUserID.h; path = Classes/PLUserID.h; sourceTree = "<group>"; };
+		F98B768D1BBDFC9500441C22 /* PLUserID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLUserID.m; path = Classes/PLUserID.m; sourceTree = "<group>"; };
+		F9ED3E221BC736E1003D1BBA /* PLLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLLoginViewController.h; path = UI/Login/PLLoginViewController.h; sourceTree = "<group>"; };
+		F9ED3E231BC736E1003D1BBA /* PLLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLLoginViewController.m; path = UI/Login/PLLoginViewController.m; sourceTree = "<group>"; };
+		F9ED3E241BC736E1003D1BBA /* PLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PLLoginViewController.xib; path = UI/Login/PLLoginViewController.xib; sourceTree = "<group>"; };
+		F9ED3E271BC736ED003D1BBA /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = UI/FirstViewController.h; sourceTree = "<group>"; };
+		F9ED3E281BC736ED003D1BBA /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = UI/FirstViewController.m; sourceTree = "<group>"; };
+		F9ED3E2A1BC736F3003D1BBA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = UI/SecondViewController.h; sourceTree = "<group>"; };
+		F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = UI/SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +137,10 @@
 		F98B76301BBDF00100441C22 /* thePlug */ = {
 			isa = PBXGroup;
 			children = (
+				F98B768F1BBDFC9F00441C22 /* Classes */,
+				F98B76901BBDFCAC00441C22 /* UI */,
 				F98B76341BBDF00100441C22 /* AppDelegate.h */,
 				F98B76351BBDF00100441C22 /* AppDelegate.m */,
-				F98B76371BBDF00100441C22 /* FirstViewController.h */,
-				F98B76381BBDF00100441C22 /* FirstViewController.m */,
-				F98B763A1BBDF00100441C22 /* SecondViewController.h */,
-				F98B763B1BBDF00100441C22 /* SecondViewController.m */,
 				F98B763D1BBDF00100441C22 /* Main.storyboard */,
 				F98B76401BBDF00100441C22 /* Assets.xcassets */,
 				F98B76421BBDF00100441C22 /* LaunchScreen.storyboard */,
@@ -146,6 +153,7 @@
 		F98B76311BBDF00100441C22 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F98B76881BBDF39F00441C22 /* thePlug_header.pch */,
 				F98B76321BBDF00100441C22 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -167,6 +175,37 @@
 				F98B765B1BBDF00100441C22 /* Info.plist */,
 			);
 			path = thePlugUITests;
+			sourceTree = "<group>";
+		};
+		F98B768F1BBDFC9F00441C22 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F98B768C1BBDFC9500441C22 /* PLUserID.h */,
+				F98B768D1BBDFC9500441C22 /* PLUserID.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F98B76901BBDFCAC00441C22 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED3E211BC73647003D1BBA /* Login */,
+				F9ED3E271BC736ED003D1BBA /* FirstViewController.h */,
+				F9ED3E281BC736ED003D1BBA /* FirstViewController.m */,
+				F9ED3E2A1BC736F3003D1BBA /* SecondViewController.h */,
+				F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F9ED3E211BC73647003D1BBA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F9ED3E221BC736E1003D1BBA /* PLLoginViewController.h */,
+				F9ED3E231BC736E1003D1BBA /* PLLoginViewController.m */,
+				F9ED3E241BC736E1003D1BBA /* PLLoginViewController.xib */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +315,7 @@
 			files = (
 				F98B76441BBDF00100441C22 /* LaunchScreen.storyboard in Resources */,
 				F98B76411BBDF00100441C22 /* Assets.xcassets in Resources */,
+				F9ED3E261BC736E1003D1BBA /* PLLoginViewController.xib in Resources */,
 				F98B763F1BBDF00100441C22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,9 +374,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F98B763C1BBDF00100441C22 /* SecondViewController.m in Sources */,
+				F9ED3E2C1BC736F3003D1BBA /* SecondViewController.m in Sources */,
 				F98B76361BBDF00100441C22 /* AppDelegate.m in Sources */,
-				F98B76391BBDF00100441C22 /* FirstViewController.m in Sources */,
+				F98B768E1BBDFC9500441C22 /* PLUserID.m in Sources */,
+				F9ED3E291BC736ED003D1BBA /* FirstViewController.m in Sources */,
+				F9ED3E251BC736E1003D1BBA /* PLLoginViewController.m in Sources */,
 				F98B76331BBDF00100441C22 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +525,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/thePlug",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/thePlug_iOS/thePlug/thePlug/thePlug_header.pch";
 				INFOPLIST_FILE = thePlug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlug;
@@ -499,6 +543,8 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/thePlug",
 				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/thePlug_iOS/thePlug/thePlug/thePlug_header.pch";
 				INFOPLIST_FILE = thePlug/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlug;

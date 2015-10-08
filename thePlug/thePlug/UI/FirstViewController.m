@@ -7,6 +7,8 @@
 //
 
 #import "FirstViewController.h"
+#import "PLUserID.h"
+#import "PLLoginViewController.h"
 
 @interface FirstViewController ()
 
@@ -16,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    if (true) {
+        PLLoginViewController *vc = [[PLLoginViewController alloc] initWithNibName:@"PLLoginViewController" bundle:nil];
+        [self presentViewController:vc animated:YES completion:^{
+            
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

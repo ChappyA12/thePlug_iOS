@@ -1,0 +1,23 @@
+//
+//  thePlug_header.pch
+//  thePlug
+//
+//  Created by Chappy Asel on 10/1/15.
+//  Copyright © 2015 CD. All rights reserved.
+//
+
+#ifndef thePlug_header_pch
+#define thePlug_header_pch
+
+#import <AWSCore/AWSCore.h>
+#import <AWSS3/AWSS3.h>
+#import <AWSDynamoDB/AWSDynamoDB.h>
+#import <AWSLambda/AWSLambda.h>
+#import <AWSCognito/AWSCognito.h>
+#import <AWSSQS/AWSSQS.h>
+#import <AWSSNS/AWSSNS.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* thePlug_header_pch */
