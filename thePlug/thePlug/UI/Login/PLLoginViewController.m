@@ -85,6 +85,7 @@
                         dispatch_async(dispatch_get_main_queue(), ^{
                             NSLog(@"Logged in");
                             [self.textField3 resignFirstResponder];
+                            [self.delegate userLoggedInWithIdentityID:JSONObject[@"identityId"]];
                             [self dismissViewControllerAnimated:YES completion:^{
                                 
                             }];
@@ -157,7 +158,40 @@
             [self.textField2 becomeFirstResponder];
         }
         else {
-            
+            [[self.lambdaInvoker invokeFunction:@"LambdAuthCreateUser"
+                                     JSONObject:@{@"email": self.textField1.text,
+                                                  @"password": self.textField3.text,
+                                                  @"isError": @NO}] continueWithBlock:^id(AWSTask *task) {
+                if (task.result) {
+                    NSLog(@"Result: %@", task.result);
+                    NSDictionary *JSONObject = task.result;
+                    BOOL userCreated = [JSONObject[@"created"] boolValue];
+                    if (userCreated) {
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            NSLog(@"User created");
+                            [self.textField3 resignFirstResponder];
+                            [self backButtonPressed:nil];
+                            [[[UIAlertView alloc] initWithTitle:@"Important"
+                                                        message:@"You must verify your email in order to log in. Once you have verified via email, you can log in."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil] show];
+                        });
+                    }
+                    else {
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [[[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"User could not be created at this time. Please try again later."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil] show];
+                            self.textField3.text = @"";
+                            [self.textField3 becomeFirstResponder];
+                        });
+                    }
+                }
+                return nil;
+            }];
         }
         self.createAccountButton.userInteractionEnabled = YES;
         self.backButton.userInteractionEnabled = YES;
@@ -187,6 +221,9 @@
 }
 
 - (IBAction)backButtonPressed:(UIButton *)sender {
+    self.textField1.text = @"";
+    self.textField2.text = @"";
+    self.textField3.text = @"";
     self.isCreatingAccount = NO;
     self.isLoggingIn = NO;
     self.loginButton.userInteractionEnabled = NO;

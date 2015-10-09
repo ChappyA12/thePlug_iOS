@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  PLProfileViewController.h
 //  thePlug
 //
 //  Created by Chappy Asel on 10/1/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface PLProfileViewController : UIViewController
 
 
 @end

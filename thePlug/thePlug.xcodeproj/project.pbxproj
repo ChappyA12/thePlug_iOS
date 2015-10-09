@@ -19,7 +19,7 @@
 		F9ED3E251BC736E1003D1BBA /* PLLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E231BC736E1003D1BBA /* PLLoginViewController.m */; };
 		F9ED3E261BC736E1003D1BBA /* PLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E241BC736E1003D1BBA /* PLLoginViewController.xib */; };
 		F9ED3E291BC736ED003D1BBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E281BC736ED003D1BBA /* FirstViewController.m */; };
-		F9ED3E2C1BC736F3003D1BBA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */; };
+		F9ED3E2C1BC736F3003D1BBA /* PLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E2B1BC736F3003D1BBA /* PLProfileViewController.m */; };
 		F9ED3E2F1BC7601F003D1BBA /* UIColor+PLColorSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E2E1BC7601F003D1BBA /* UIColor+PLColorSet.m */; };
 		F9ED3E361BC76841003D1BBA /* PlugShortLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E341BC76841003D1BBA /* PlugShortLeft.png */; };
 		F9ED3E371BC76841003D1BBA /* PlugShortRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E351BC76841003D1BBA /* PlugShortRight.png */; };
@@ -70,8 +70,8 @@
 		F9ED3E241BC736E1003D1BBA /* PLLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PLLoginViewController.xib; path = UI/Login/PLLoginViewController.xib; sourceTree = "<group>"; };
 		F9ED3E271BC736ED003D1BBA /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = UI/FirstViewController.h; sourceTree = "<group>"; };
 		F9ED3E281BC736ED003D1BBA /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = UI/FirstViewController.m; sourceTree = "<group>"; };
-		F9ED3E2A1BC736F3003D1BBA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = UI/SecondViewController.h; sourceTree = "<group>"; };
-		F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = UI/SecondViewController.m; sourceTree = "<group>"; };
+		F9ED3E2A1BC736F3003D1BBA /* PLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PLProfileViewController.h; path = UI/PLProfileViewController.h; sourceTree = "<group>"; };
+		F9ED3E2B1BC736F3003D1BBA /* PLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PLProfileViewController.m; path = UI/PLProfileViewController.m; sourceTree = "<group>"; };
 		F9ED3E2D1BC7601F003D1BBA /* UIColor+PLColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PLColorSet.h"; sourceTree = "<group>"; };
 		F9ED3E2E1BC7601F003D1BBA /* UIColor+PLColorSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PLColorSet.m"; sourceTree = "<group>"; };
 		F9ED3E341BC76841003D1BBA /* PlugShortLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlugShortLeft.png; path = Images/PlugShortLeft.png; sourceTree = "<group>"; };
@@ -209,8 +209,8 @@
 				F9ED3E211BC73647003D1BBA /* Login */,
 				F9ED3E271BC736ED003D1BBA /* FirstViewController.h */,
 				F9ED3E281BC736ED003D1BBA /* FirstViewController.m */,
-				F9ED3E2A1BC736F3003D1BBA /* SecondViewController.h */,
-				F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */,
+				F9ED3E2A1BC736F3003D1BBA /* PLProfileViewController.h */,
+				F9ED3E2B1BC736F3003D1BBA /* PLProfileViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -395,7 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9ED3E2C1BC736F3003D1BBA /* SecondViewController.m in Sources */,
+				F9ED3E2C1BC736F3003D1BBA /* PLProfileViewController.m in Sources */,
 				F98B76361BBDF00100441C22 /* AppDelegate.m in Sources */,
 				F98B768E1BBDFC9500441C22 /* PLUserID.m in Sources */,
 				F9ED3E291BC736ED003D1BBA /* FirstViewController.m in Sources */,

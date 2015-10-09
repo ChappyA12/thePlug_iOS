@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <AWSDynamoDB/AWSDynamoDB.h>
+#import "PLLoginViewcontroller.h"
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <PLLoginViewControllerDelegate>
 
 
 @end

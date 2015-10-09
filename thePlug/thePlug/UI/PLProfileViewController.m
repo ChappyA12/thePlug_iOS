@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  PLProfileViewController.m
 //  thePlug
 //
 //  Created by Chappy Asel on 10/1/15.
 //  Copyright © 2015 CD. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "PLProfileViewController.h"
 
 @interface SecondViewController ()
 
 @end
 
-@implementation SecondViewController
+@implementation PLProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

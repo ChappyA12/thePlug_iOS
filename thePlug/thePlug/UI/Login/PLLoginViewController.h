@@ -8,7 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol PLLoginViewControllerDelegate <NSObject>
+-(void) userLoggedInWithIdentityID: (NSString *) IndentityId;
+@end
+
 @interface PLLoginViewController : UIViewController
+
+@property id <PLLoginViewControllerDelegate> delegate;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
