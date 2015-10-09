@@ -219,6 +219,10 @@
     [self.scrollView setContentOffset:CGPointMake(0, 0) animated:YES];
 }
 
+- (UIStatusBarStyle) preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 /*
 #pragma mark - Navigation
 

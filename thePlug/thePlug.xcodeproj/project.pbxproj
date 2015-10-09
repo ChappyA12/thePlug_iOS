@@ -20,6 +20,11 @@
 		F9ED3E261BC736E1003D1BBA /* PLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E241BC736E1003D1BBA /* PLLoginViewController.xib */; };
 		F9ED3E291BC736ED003D1BBA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E281BC736ED003D1BBA /* FirstViewController.m */; };
 		F9ED3E2C1BC736F3003D1BBA /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */; };
+		F9ED3E2F1BC7601F003D1BBA /* UIColor+PLColorSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F9ED3E2E1BC7601F003D1BBA /* UIColor+PLColorSet.m */; };
+		F9ED3E361BC76841003D1BBA /* PlugShortLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E341BC76841003D1BBA /* PlugShortLeft.png */; };
+		F9ED3E371BC76841003D1BBA /* PlugShortRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E351BC76841003D1BBA /* PlugShortRight.png */; };
+		F9ED3E391BC76B87003D1BBA /* PlugLongLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E381BC76B87003D1BBA /* PlugLongLeft.png */; };
+		F9ED3E3B1BC76B8F003D1BBA /* PlugLongRight.png in Resources */ = {isa = PBXBuildFile; fileRef = F9ED3E3A1BC76B8F003D1BBA /* PlugLongRight.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,12 @@
 		F9ED3E281BC736ED003D1BBA /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstViewController.m; path = UI/FirstViewController.m; sourceTree = "<group>"; };
 		F9ED3E2A1BC736F3003D1BBA /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = UI/SecondViewController.h; sourceTree = "<group>"; };
 		F9ED3E2B1BC736F3003D1BBA /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = UI/SecondViewController.m; sourceTree = "<group>"; };
+		F9ED3E2D1BC7601F003D1BBA /* UIColor+PLColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PLColorSet.h"; sourceTree = "<group>"; };
+		F9ED3E2E1BC7601F003D1BBA /* UIColor+PLColorSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PLColorSet.m"; sourceTree = "<group>"; };
+		F9ED3E341BC76841003D1BBA /* PlugShortLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlugShortLeft.png; path = Images/PlugShortLeft.png; sourceTree = "<group>"; };
+		F9ED3E351BC76841003D1BBA /* PlugShortRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlugShortRight.png; path = Images/PlugShortRight.png; sourceTree = "<group>"; };
+		F9ED3E381BC76B87003D1BBA /* PlugLongLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlugLongLeft.png; path = Images/PlugLongLeft.png; sourceTree = "<group>"; };
+		F9ED3E3A1BC76B8F003D1BBA /* PlugLongRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlugLongRight.png; path = Images/PlugLongRight.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +154,10 @@
 				F98B76351BBDF00100441C22 /* AppDelegate.m */,
 				F98B763D1BBDF00100441C22 /* Main.storyboard */,
 				F98B76401BBDF00100441C22 /* Assets.xcassets */,
+				F9ED3E341BC76841003D1BBA /* PlugShortLeft.png */,
+				F9ED3E351BC76841003D1BBA /* PlugShortRight.png */,
+				F9ED3E381BC76B87003D1BBA /* PlugLongLeft.png */,
+				F9ED3E3A1BC76B8F003D1BBA /* PlugLongRight.png */,
 				F98B76421BBDF00100441C22 /* LaunchScreen.storyboard */,
 				F98B76451BBDF00100441C22 /* Info.plist */,
 				F98B76311BBDF00100441C22 /* Supporting Files */,
@@ -153,6 +168,8 @@
 		F98B76311BBDF00100441C22 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9ED3E2D1BC7601F003D1BBA /* UIColor+PLColorSet.h */,
+				F9ED3E2E1BC7601F003D1BBA /* UIColor+PLColorSet.m */,
 				F98B76881BBDF39F00441C22 /* thePlug_header.pch */,
 				F98B76321BBDF00100441C22 /* main.m */,
 			);
@@ -314,8 +331,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F98B76441BBDF00100441C22 /* LaunchScreen.storyboard in Resources */,
+				F9ED3E371BC76841003D1BBA /* PlugShortRight.png in Resources */,
 				F98B76411BBDF00100441C22 /* Assets.xcassets in Resources */,
+				F9ED3E361BC76841003D1BBA /* PlugShortLeft.png in Resources */,
+				F9ED3E391BC76B87003D1BBA /* PlugLongLeft.png in Resources */,
 				F9ED3E261BC736E1003D1BBA /* PLLoginViewController.xib in Resources */,
+				F9ED3E3B1BC76B8F003D1BBA /* PlugLongRight.png in Resources */,
 				F98B763F1BBDF00100441C22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +401,7 @@
 				F9ED3E291BC736ED003D1BBA /* FirstViewController.m in Sources */,
 				F9ED3E251BC736E1003D1BBA /* PLLoginViewController.m in Sources */,
 				F98B76331BBDF00100441C22 /* main.m in Sources */,
+				F9ED3E2F1BC7601F003D1BBA /* UIColor+PLColorSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +550,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/thePlug_iOS/thePlug/thePlug/thePlug_header.pch";
 				INFOPLIST_FILE = thePlug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -546,6 +569,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/chappysthebest1/Desktop/Github Repos/thePlug_iOS/thePlug/thePlug/thePlug_header.pch";
 				INFOPLIST_FILE = thePlug/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlug;
 				PRODUCT_NAME = "$(TARGET_NAME)";

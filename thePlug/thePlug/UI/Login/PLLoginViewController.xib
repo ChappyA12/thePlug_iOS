@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
     </dependencies>
     <objects>
@@ -24,24 +25,24 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7a9-rq-xju">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7a9-rq-xju">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fp-ib-6gs">
+                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6fp-ib-6gs">
                             <rect key="frame" x="160" y="60" width="280" height="180"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to The Plug" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Xi-BP-b1c">
                                     <rect key="frame" x="15" y="0.0" width="250" height="120"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="41"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The app for sharing your activities with others" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odz-wL-zE4">
                                     <rect key="frame" x="38" y="131" width="204" height="49"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -58,7 +59,9 @@
                                     <rect key="frame" x="103" y="60" width="75" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <state key="normal" title="Back"/>
+                                    <state key="normal" title="Back">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="8wP-Lg-RDC"/>
                                     </connections>
@@ -67,7 +70,9 @@
                                     <rect key="frame" x="50" y="80" width="180" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <state key="normal" title="Create New Account"/>
+                                    <state key="normal" title="Create New Account">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="createAccountButtonPressed:" destination="-1" eventType="touchUpInside" id="HFp-iu-RCJ"/>
                                     </connections>
@@ -76,7 +81,9 @@
                                     <rect key="frame" x="103" y="40" width="75" height="30"/>
                                     <animations/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <state key="normal" title="Login"/>
+                                    <state key="normal" title="Login">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
                                     <connections>
                                         <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="cXx-ae-tT6"/>
                                     </connections>
@@ -94,18 +101,21 @@
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKv-nb-fgk">
                                     <rect key="frame" x="40" y="65" width="200" height="30"/>
                                     <animations/>
+                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khT-Z4-qz4">
                                     <rect key="frame" x="40" y="117" width="200" height="30"/>
                                     <animations/>
+                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                 </textField>
                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AK-2B-5Mi">
                                     <rect key="frame" x="40" y="13" width="200" height="30"/>
                                     <animations/>
+                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                 </textField>
@@ -116,26 +126,47 @@
                                 <constraint firstAttribute="height" constant="160" id="R8U-KT-J7Q"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-gQ-c2h">
+                            <rect key="frame" x="0.0" y="20" width="600" height="50"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlugLongLeft.png" translatesAutoresizingMaskIntoConstraints="NO" id="tSM-ml-JbO">
+                                    <rect key="frame" x="-204" y="-39" width="500" height="128"/>
+                                    <animations/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PlugLongRight.png" translatesAutoresizingMaskIntoConstraints="NO" id="aGq-Lc-tP4">
+                                    <rect key="frame" x="304" y="-39" width="500" height="128"/>
+                                    <animations/>
+                                </imageView>
+                            </subviews>
+                            <animations/>
+                        </view>
                     </subviews>
                     <animations/>
                     <constraints>
+                        <constraint firstItem="bCk-gQ-c2h" firstAttribute="centerX" secondItem="7a9-rq-xju" secondAttribute="centerX" id="1WU-p0-cWQ"/>
                         <constraint firstItem="6fp-ib-6gs" firstAttribute="top" secondItem="7a9-rq-xju" secondAttribute="top" constant="60" id="Uxj-eK-iBI"/>
                         <constraint firstItem="OOx-di-BuK" firstAttribute="centerX" secondItem="7a9-rq-xju" secondAttribute="centerX" id="cSb-UY-T7o"/>
                         <constraint firstAttribute="bottom" secondItem="OOx-di-BuK" secondAttribute="bottom" constant="40" id="gH1-Io-lPe"/>
                         <constraint firstItem="OOx-di-BuK" firstAttribute="top" secondItem="2rq-z7-CQY" secondAttribute="bottom" constant="30" id="hSj-dM-Pf0"/>
                         <constraint firstItem="2rq-z7-CQY" firstAttribute="centerX" secondItem="7a9-rq-xju" secondAttribute="centerX" id="jTL-Bq-zHW"/>
+                        <constraint firstItem="bCk-gQ-c2h" firstAttribute="top" secondItem="7a9-rq-xju" secondAttribute="top" constant="20" id="kOR-Js-p5n"/>
                         <constraint firstItem="6fp-ib-6gs" firstAttribute="centerX" secondItem="7a9-rq-xju" secondAttribute="centerX" id="sYh-fZ-tdf"/>
                     </constraints>
                 </scrollView>
             </subviews>
             <animations/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.39215686274509803" green="0.8666666666666667" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="7a9-rq-xju" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2U9-Dw-zeR"/>
-                <constraint firstItem="7a9-rq-xju" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5gN-Ob-2Yv"/>
+                <constraint firstAttribute="trailing" secondItem="7a9-rq-xju" secondAttribute="trailing" id="2Vo-Hy-yuQ"/>
+                <constraint firstItem="7a9-rq-xju" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="F4j-nk-wyP"/>
                 <constraint firstItem="7a9-rq-xju" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="TWF-Ky-4tn"/>
                 <constraint firstItem="7a9-rq-xju" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="aEe-xy-uF9"/>
             </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
         </view>
     </objects>
+    <resources>
+        <image name="PlugLongLeft.png" width="3000" height="399"/>
+        <image name="PlugLongRight.png" width="3000" height="400"/>
+    </resources>
 </document>

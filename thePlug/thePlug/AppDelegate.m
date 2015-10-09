@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UIColor+PLColorSet.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [self.window setTintColor:[UIColor PLSecondaryColor]];
     AWSCognitoCredentialsProvider *credentialsProvider = [[AWSCognitoCredentialsProvider alloc]
                                                           initWithRegionType:AWSRegionUSEast1
                                                           identityPoolId:@"us-east-1:2324489a-7dcf-4943-be12-f57514126726"];
