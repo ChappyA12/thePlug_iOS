@@ -7,13 +7,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PLLoginViewController">
             <connections>
+                <outlet property="activityIndicator" destination="SfZ-vK-rc8" id="Zx2-za-fEA"/>
                 <outlet property="backButton" destination="yIm-kd-KZi" id="zLh-zO-g78"/>
                 <outlet property="createAccountButton" destination="Ose-oD-gcK" id="bs1-e1-TUB"/>
+                <outlet property="label1" destination="2Xi-BP-b1c" id="xiV-28-8hQ"/>
+                <outlet property="label2" destination="odz-wL-zE4" id="t9d-HG-HNy"/>
+                <outlet property="leftPlug" destination="tSM-ml-JbO" id="jPF-ZY-0qy"/>
                 <outlet property="loginButton" destination="wKe-OZ-RXf" id="Arf-1O-pOd"/>
+                <outlet property="rightPlug" destination="aGq-Lc-tP4" id="JvQ-qV-cZO"/>
                 <outlet property="scrollView" destination="7a9-rq-xju" id="9wi-is-H9u"/>
                 <outlet property="textField1" destination="2AK-2B-5Mi" id="oUf-fu-5ZH"/>
                 <outlet property="textField2" destination="BKv-nb-fgk" id="ewz-3N-yn9"/>
                 <outlet property="textField3" destination="khT-Z4-qz4" id="Ua2-G2-LoR"/>
+                <outlet property="textField4" destination="kiQ-sk-JTh" id="6e2-8I-lcm"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="view1" destination="6fp-ib-6gs" id="lGv-ki-k2p"/>
                 <outlet property="view2" destination="2rq-z7-CQY" id="S38-Nr-cwG"/>
@@ -96,34 +102,45 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2rq-z7-CQY">
-                            <rect key="frame" x="160" y="250" width="280" height="160"/>
+                            <rect key="frame" x="160" y="250" width="280" height="200"/>
                             <subviews>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKv-nb-fgk">
-                                    <rect key="frame" x="40" y="65" width="200" height="30"/>
+                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="SfZ-vK-rc8">
+                                    <rect key="frame" x="130" y="170" width="20" height="20"/>
                                     <animations/>
-                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                                </textField>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khT-Z4-qz4">
-                                    <rect key="frame" x="40" y="117" width="200" height="30"/>
-                                    <animations/>
-                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
-                                </textField>
-                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AK-2B-5Mi">
-                                    <rect key="frame" x="40" y="13" width="200" height="30"/>
+                                </activityIndicatorView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKv-nb-fgk">
+                                    <rect key="frame" x="40" y="49" width="200" height="30"/>
                                     <animations/>
                                     <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                 </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khT-Z4-qz4">
+                                    <rect key="frame" x="40" y="91" width="200" height="30"/>
+                                    <animations/>
+                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kiQ-sk-JTh">
+                                    <rect key="frame" x="40" y="133" width="200" height="30"/>
+                                    <animations/>
+                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                </textField>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2AK-2B-5Mi">
+                                    <rect key="frame" x="40" y="7" width="200" height="30"/>
+                                    <animations/>
+                                    <color key="tintColor" red="0.3921568627" green="0.86666666670000003" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                                </textField>
                             </subviews>
                             <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="280" id="1Ia-ky-hXl"/>
-                                <constraint firstAttribute="height" constant="160" id="R8U-KT-J7Q"/>
+                                <constraint firstAttribute="height" constant="200" id="R8U-KT-J7Q"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bCk-gQ-c2h">

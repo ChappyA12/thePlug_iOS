@@ -12,6 +12,7 @@
 
 @interface FirstViewController : UIViewController <PLLoginViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *textView;
 
 @end
 

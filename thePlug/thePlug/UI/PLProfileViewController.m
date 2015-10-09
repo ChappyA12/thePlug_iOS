@@ -8,7 +8,7 @@
 
 #import "PLProfileViewController.h"
 
-@interface SecondViewController ()
+@interface PLProfileViewController ()
 
 @end
 

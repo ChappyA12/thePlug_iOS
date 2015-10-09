@@ -32,7 +32,7 @@
             
         }];
     }
-    AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
+    //AWSDynamoDBObjectMapper *dynamoDBObjectMapper = [AWSDynamoDBObjectMapper defaultDynamoDBObjectMapper];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -40,8 +40,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)userLoggedInWithIdentityID:(NSString *)IndentityId {
+- (void)userLoggedInWithUsername:(NSString *)username IdentityID:(NSString *)IndentityId Token:(NSString *)token {
     self.userLoggedIn = YES;
+    NSLog(@"Logged in: %@",username);
+    _textView.text = [NSString stringWithFormat:@"Welcome, %@",username];
 }
 
 @end
