@@ -137,7 +137,7 @@
                     NSDictionary *JSONObject = task.result;
                     BOOL userLoggedIn = [JSONObject[@"login"] boolValue];
                     BOOL userVerified = [JSONObject[@"verified"] boolValue];
-                    if (userLoggedIn && userVerified) {
+                    if (userLoggedIn) {
                         dispatch_async(dispatch_get_main_queue(), ^{
                             NSLog(@"Logged in");
                             [self.textField4 resignFirstResponder];
@@ -261,6 +261,25 @@
                     if (userCreated) {
                         dispatch_async(dispatch_get_main_queue(), ^{
                             NSLog(@"User created");
+                            dispatch_async(dispatch_get_main_queue(), ^{
+                                NSLog(@"Logged in");
+                                [self.textField4 resignFirstResponder];
+                                [UIView animateWithDuration:0.7
+                                                      delay:0.0
+                                                    options:UIViewAnimationOptionCurveEaseIn
+                                                 animations:^{
+                                                     _leftPlug.center = CGPointMake(_leftPlug.center.x+10, _leftPlug.center.y);
+                                                     _rightPlug.center = CGPointMake(_rightPlug.center.x-10, _rightPlug.center.y);
+                                                 } completion:^(BOOL finished) {
+                                                     [self.delegate userLoggedInWithUsername:JSONObject[@"username"]
+                                                                                  IdentityID:JSONObject[@"identityId"]
+                                                                                       Token:JSONObject[@"token"]];
+                                                     [self dismissViewControllerAnimated:YES completion:^{
+                                                         
+                                                     }];
+                                                 }];
+                            });
+                            /*
                             [self.textField4 resignFirstResponder];
                             [self backButtonPressed:nil];
                             [[[UIAlertView alloc] initWithTitle:@"Important"
@@ -268,6 +287,7 @@
                                                        delegate:nil
                                               cancelButtonTitle:@"Ok"
                                               otherButtonTitles:nil] show];
+                             */
                         });
                     }
                     else {
