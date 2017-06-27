@@ -294,13 +294,16 @@
 				TargetAttributes = {
 					F98B762D1BBDF00100441C22 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = AE4TCQ8Z49;
 					};
 					F98B76491BBDF00100441C22 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = AE4TCQ8Z49;
 						TestTargetID = F98B762D1BBDF00100441C22;
 					};
 					F98B76541BBDF00100441C22 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = AE4TCQ8Z49;
 						TestTargetID = F98B762D1BBDF00100441C22;
 					};
 				};
@@ -543,6 +546,7 @@
 			baseConfigurationReference = 3A44846A0E17156E912C89BF /* Pods-thePlug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AE4TCQ8Z49;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/thePlug",
@@ -562,6 +566,7 @@
 			baseConfigurationReference = 9951F88B5201B5863AFA2056 /* Pods-thePlug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AE4TCQ8Z49;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/thePlug",
@@ -580,6 +585,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AE4TCQ8Z49;
 				INFOPLIST_FILE = thePlugTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlugTests;
@@ -592,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AE4TCQ8Z49;
 				INFOPLIST_FILE = thePlugTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlugTests;
@@ -603,6 +610,7 @@
 		F98B76651BBDF00100441C22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AE4TCQ8Z49;
 				INFOPLIST_FILE = thePlugUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlugUITests;
@@ -615,6 +623,7 @@
 		F98B76661BBDF00100441C22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AE4TCQ8Z49;
 				INFOPLIST_FILE = thePlugUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CDdesigns.thePlugUITests;
